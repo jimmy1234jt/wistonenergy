@@ -12,7 +12,7 @@
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
   border-radius: 4px;
 }
@@ -32,7 +32,7 @@
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #ddd;
+  background-color: rgb(221, 221, 221);
   color: black;
 }
 
@@ -60,7 +60,7 @@
 }
 body::after {
   content: "none";
- background-image: url(/IMG-20221124-WA0039.jpg);
+ /* background-image: url(/IMG-20221124-WA0039.jpg); */
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -70,18 +70,31 @@ body::after {
   z-index:-10;   
 }
 
-* {box-sizing:border-box}
-
+* {
+  box-sizing:border-box;
+}
+section{
+  background-color: rgb(221, 221, 221);
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  border-radius: 20px;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  border-radius: 20px;
+}
+
+.mySlides img{
+  width: 1000px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: #f1f1f1 1px 1px 1px 1px;
 }
 
 /* Next & previous buttons */
@@ -113,8 +126,9 @@ body::after {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
+  color: rgba(255, 0, 0, 0.586);
+  background-color: rgba(69, 67, 67, 0.274)  ;
+  font-size: 50px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -158,8 +172,50 @@ body::after {
   to {opacity: 1}
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: #00bef31e 1px 1px 1px 1px;
+  margin: auto;
+  max-height: 500px;
+}
 
 
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: #555;
+}
+
+.containerTab {
+  padding: 20px;
+  color: #555;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: #555;
+  font-size: 35px;
+  cursor: pointer;
+}
 
 
 
@@ -405,7 +461,7 @@ address a:hover {
   font-size: 50px;
   padding: 15px 0;
   font-weight: 700;
-  color: #fff;
+  color: #f1f1f1;
   background-image: url("/core/fileparse.php/16/urlt/../images/ribbon.png");
   background-size: contain;
   background-repeat: no-repeat;
