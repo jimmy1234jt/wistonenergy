@@ -7,11 +7,17 @@
     <title>WISTON ENERGY LTD</title>
     <link rel="icon" href="/IMG-20221124-WA0039.jpg" type="image/gif">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+
 </head>
 <body>
+  <marquee>***Site Under Construction***<span> Site Developer Contact: +2348053989698 </span></marquee>
     <div class="header">
     <img src="/IMG-20221124-WA0039.jpg" alt="logo">
     <a href=#home class="logo"> WISTON ENERGY LTD</a>
+    <br><br><br><br>
     <div class="header-right">
     <a class="active" href="#home">Home</a>
     <a href="#ourservice">Our Services</a>
@@ -26,21 +32,27 @@
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="slickline-3-300x227.png" >
+    <div class="numbertext">1 / 4</div>
+    <img src="/SLICKLINE UNIT.png" >
     <div class="text">Slickline Units</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
+    <div class="numbertext">2 / 4</div>
     <img src="COILTUBING.png" >
     <div class="text">Coiltubing Operation</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="Filtation-update.png">
+    <div class="numbertext">3 / 4</div>
+    <img src="/FILTRATION UNIT.jpg">
     <div class="text">Filtration Service</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="/live-promo.jpg">
+    <div class="text">Downhole Tools</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -50,46 +62,85 @@
 <br>
 
 <!-- The dots/circles -->
-<div style="text-align:center">
+<div style="text-align: center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
 </div>
 <br><br>
 <div>
 <!-- The grid: three columns -->
-<div class="row" style="box-shadow: WHITE 2px 2px 2px 2px;">
-  <div class="column" onclick="openTab('b1');" style="background:rgb(221, 221, 221);">SLICKLINE SERVICE</div>
-  <div class="column" onclick="openTab('b2');" style="background:rgb(221, 221, 221);">COIL TUBING OPERATION</div>
-  <div class="column" onclick="openTab('b3');" style="background:rgb(221, 221, 221);">FILTRATION SERVICE</div>
+<div class="row" style="box-shadow: red 2px 2px 2px 2px;">
+  <div class="column" onclick="openTab('b1');" style="background:dodgerblue;">ABOUT US</div>
+  <div class="column" onclick="openTab('b2');" style="background:dodgerblue;">MISSION/VISION</div>
+  <div class="column" onclick="openTab('b3');" style="background:dodgerblue;">CONTACT US</div>
 </div>
 
 <!-- The expanding grid (hidden by default) -->
-<div id="b1" class="containerTab" style="display:none;background:rgb(221, 221, 221)">
+<div id="b1" class="containerTab" style="display:none;background:rgb(255, 255, 255)">
   <!-- If you want the ability to close the container, add a close button -->
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-  <h2>SLICKLINE SERVICES</h2>
-  <p>Wireline/Slickline services are used on an existing wellbore to lower equipment or measurement devices
+  <h2>ABOUT US</h2>
+  
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:rgb(255, 254, 254)">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2> MISSON/VISION</h2>
+  <br>
+  <p>Wiston Energy Ltd is a private oil & gas service company that focus on different sectors in Nigeria's oil & gas industries. With knowledge and equipment, we ensure good response and effective results to our client for our core services i.e. Coil tubing, Filtration, Well head maintainance, Slickline services etc. </p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:rgb(255, 255, 255)">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>CONTACT US</h2>
+  <br>
+  <p>Phone No. : +2348033244143</p>
+  <br>
+  <p>Email : info@wistonenergy.com</p>
+</div>
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h2>SLICKLINE SERVICES</h2>
+      <p>Wireline/Slickline services are used on an existing wellbore to lower equipment or measurement devices
 into the well for well intervention and reservoir evaluation. Wireline/Slickline is a thin wire of 0.108” to 0.125” size
 that is introduced into a well to deliver and retrieve tools downhole and can support the acquisition of data from
 memory tools regarding the conditions of the wellbore.</p>
+    </div>
+    <div class="column-33">
+     <h2>COIL TUBING OPERATION</h2>
+     <p>Coiled tubing applications include drilling operations, hydraulic fracturing, well completions, removing sand or fill from wellbore, and other applications that involve pumping fluids at high temperatures and high salinity.</p>
+    </div>
+  </div>
 </div>
 
-<div id="b2" class="containerTab" style="display:none;background:rgb(221, 221, 221)">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-  <h2>COIL TUBING OPERATION</h2>
-  <p>Lorem ipsum..</p>
+<div class="container">
+  <div class="row">
+    <div class="column-33">
+      <h2>CERTIFICATES</h2>
+      <p>&#10004; HSE</p>
+      <p>&#10004; QAQC</p>
+      <p>&#10004; </p>
+      <p>&#10004; </p>
+    </div>
+    <div class="column-66">
+      <h2>TRAINING</h2>
+      <p>&#10004;  HSE TRAINING COURSE</p>
+      <p>&#10004; HELICOPTER UNDERWATER ESCAPE TECHNIQUE (HUET)</p>
+      <p>&#10004; OFFSHORE SAFETY TRAINING (T-BOSIET)</p>
+      <p>&#10004; SURVIVAL AT SEA (SAS)</p>
+      <p>&#10004; BASIC FIRE FIGHTING & SELF RESCUE</p>
+    </div>
+  </div>
 </div>
 
-<div id="b3" class="containerTab" style="display:none;background:rgb(221, 221, 221)">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-  <h2>FILTRATION SERVICE</h2>
-  <p>Filtration services are frequently required to clean undesirable debris from drilling, workover, and completion fluids. 
-Filtration units offered by WISTON ENERGY LTD Services include a  primary and secondary filter system where larger
-particles are removed first followed by a secondary filtration system capable of filtering fluids to a minimum of 2 micron. 
-The actual desired degree of filtration required is first discussed with the client to achieve optimum results.</p>
-</div>
-<br><br>
+
+
+
 
 
 <footer class="ct-footer">
