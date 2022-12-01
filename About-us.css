@@ -1,30 +1,13 @@
-html {
-    position: relative;
-    min-width: 1024px;
-    min-height: 768px;
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: #6B778D;
-    /* height: 100%; */
+html{
+    background-color: #263859;
     object-fit: contain;
-    box-sizing: border-box;
-}
-
-
-marquee{
-  background-color:#263859;
-  font-style: bold;
-  scroll-behavior: smooth;
-  width: 100%;
-  font-size: 50px;
-}
-marquee span{
-  font-size: 20px;
-  color: red;
 }
 .bg{
-  padding-left: 10%;
-  padding-right: 10%;
-  background-color: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.header-left{
+  display:inline-flex ;
 }
 
 /* Style the header with a grey background and some padding */
@@ -32,7 +15,7 @@ marquee span{
   overflow: hidden;
   background-color: #17223B;
   padding: 2px 18px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 10px 10px;
 }
 
 
@@ -47,19 +30,16 @@ marquee span{
   line-height: 25px;
   border-radius: 4px;
 }
-.header-right{
-  margin-top: 10px;
-}
-.header-left{
-  display: inline-flex;
-}
+
 
 .header img {
   float: left;
   width: 120px;
   height: 100px;
   object-fit: contain;
-  margin-top: 20px;
+}
+.header-left{
+  display: flex;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -67,7 +47,7 @@ marquee span{
   font-size: 30px;
   font-weight: bold;
   color: rgba(255, 0, 0, 0.738);
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 /* Change the background color on mouse-over */
@@ -106,266 +86,85 @@ marquee span{
     float: none;
   }
 }
-body::after {
-  content: "none";
- /* background-image: url(/IMG-20221124-WA0039.jpg); */
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index:-10;   
-}
 
-* {
-  box-sizing:border-box;
-  width: auto;
-  padding: 0;
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-
-}
-section{
-  background-color: #263859;
-}
-.section1{
-  border-radius: 0 0 10px 10px;
-  box-shadow: #8D95B0 0 0 2px 2px;
-}
-.section3{
-  border-radius: 10px 10px 0 0;
-  box-shadow: #8D95B0 0 0 2px 2px;
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 75%;
-  position: relative;
-  margin: auto;
-  border-radius: 20px;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  border-radius: 20px;
-}
-
-.mySlides img{
-  width: 100%;
-  height: 400px;
-  border-radius: 10px;
-  box-shadow: #f1f1f1 1px 1px 1px 1px;
-}
-@media screen and (max-width: 500px) {
-  .mySlides img{
-    float: none;
-    display: grid;
-  }
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: rgba(255, 0, 0, 0.582);
-  background-color: #263859b6;
-  font-size: 50px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 4px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 25%;
-  background-color: #6B778D;
-  box-shadow: #00bef31e 1px 1px 1px 1px;
-  margin: auto;
-  max-height: 200px;
-}
-
-
-/* The grid: Three equal columns that floats next to each other */
-.column {
-  float: center;
-  width: 0%;
-  padding: 50px 0px 50px 0px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  color: black;
-}
-
-.containerTab {
-  padding: 20px;
-  color: rgb(0, 0, 0);
-}
-.containerTab h2{
-  display: inline-flex;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Closable button inside the image */
-.closebtn {
-  float: right;
-  color: rgb(119, 24, 24);
-  font-size: 35px;
-  cursor: pointer;
-}
-
-* {
+html {
   box-sizing: border-box;
 }
 
-.container {
-  padding: 64px;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-/* Clear floats */
-.row:after {
-  content: "";
-  display: table;
-  clear: both
-}
-
-/* 2/3 column
-.column-66 {
+.column {
   float: left;
-  width: 50%;
-  padding: 20px;
-} */
-
-/* 1/3 column */
-.column-33 {
-  float: left;
-  width: 50%;
-  padding: 0 0 0px 20px;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
-/* Style the counter cards */
+
 .card {
-  box-shadow: 0 4px 8px 0 #6B778D; /* this adds the "card" effect */
-  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
   text-align: center;
-  background-color: #8D95B0;
-  height: 100%;
-  width: 100%;
-  min-width: 300px;
-  border-radius: 10px;
-  margin-top: 0;
-  display: grid;
-}
-.card h2{
-  color: rgba(255, 0, 0, 0.738);
-}
-.card p{
-  text-align:left;
-  font-size: 20px;
-  font-weight: lighter;
+  background-color: #474e5d;
+  color: white;
 }
 
-/* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
-@media screen and (max-width: 1000px) {
-  .column-66,
-  .column-33 {
-    width: 100%;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .card::a{
-    grid-column-start: 1;
-    grid-column-end: 1;
-  }
+.container {
+  padding: 0 16px;
 }
 
-span {
-  content: "\2713";
-}
-
-.section3::after, .card::after{
+.container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-@media screen and (min-width: 1000px) {
-  .section3 {
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
     width: 100%;
-    display: grid;
-    align-content: center;
+    display: block;
   }
 }
+
+
 
 
 
@@ -428,7 +227,7 @@ a {
   height: 50px;
   position: relative;
   width: 80px;
-  padding: 0
+  padding: 0;
 }
 .ct-footer-list {
   padding: 10px 0;

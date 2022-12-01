@@ -1,11 +1,14 @@
 html{
     background-color: #263859;
+    object-fit: contain;
 }
 .bg{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
+.header-left{
+  display:inline-flex ;
+}
 
 /* Style the header with a grey background and some padding */
 .header {
@@ -27,24 +30,24 @@ html{
   line-height: 25px;
   border-radius: 4px;
 }
-.header-right{
-  margin-top: 100px;
-}
 
 
 .header img {
   float: left;
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
 }
-
+.header-left{
+  display: flex;
+}
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
   font-size: 30px;
   font-weight: bold;
   color: rgba(255, 0, 0, 0.738);
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 /* Change the background color on mouse-over */
@@ -95,9 +98,52 @@ section{
     box-shadow: white  20px;
 }
 
+.second{
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
 
+.second h3{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+  padding-top: 20px;
+}
 
+.button{
+  padding: 20px;
+  border: none;
+  background-color:#263859 ;
+  border-radius: 10px;
+  text-decoration: solid;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
 
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 
 
@@ -117,6 +163,7 @@ section{
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
+  padding-left: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -131,6 +178,22 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
+}
+
+.fcf-form-class{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+label{
+  font-size: 30px;
+}
+
+#Email{
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 
@@ -160,6 +223,7 @@ a {
   padding-top: 0px;
   margin-top: 10px;
   position: relative;
+  border-radius: 10px;
 }
 .ct-footer-pre {
   width: 100%;
@@ -200,9 +264,10 @@ a {
   padding: 0
 }
 .ct-footer-list {
-  padding: 10px 0;
+  padding: 10px;
   list-style: none;
-  padding-left: 0;
+  padding-left: 5%;
+  padding-right: 5%;
   display: table;
   width: 100%;
 }
