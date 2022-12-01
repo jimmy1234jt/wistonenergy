@@ -118,6 +118,8 @@ html {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  background-color: #6B778D;
+  border-radius: 10px;
 }
 
 .about-section {
@@ -141,7 +143,7 @@ html {
   color: grey;
 }
 
-.button {
+/* .button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -151,11 +153,11 @@ html {
   text-align: center;
   cursor: pointer;
   width: 100%;
-}
+} */
 
-.button:hover {
+/* .button:hover {
   background-color: #555;
-}
+} */
 
 @media screen and (max-width: 650px) {
   .column {
